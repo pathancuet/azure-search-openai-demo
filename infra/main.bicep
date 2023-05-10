@@ -9,30 +9,30 @@ param environmentName string
 @description('Primary location for all resources')
 param location string
 
-param appServicePlanName string = ''
-param backendServiceName string = ''
-param resourceGroupName string = ''
+param appServicePlanName string = 'ASP-OPENAI-DEV-WESTUS'
+param backendServiceName string = 'APP-SEARCH-OPENAI-DEV-WESTUS'
+param resourceGroupName string = 'RG-OPENAI-DEV-WESTUS'
 
-param searchServiceName string = ''
-param searchServiceResourceGroupName string = ''
+param searchServiceName string = 'SRS-OPENAI-DEV-WESTUS'
+param searchServiceResourceGroupName string = 'RG-OPENAI-DEV-WESTUS'
 param searchServiceResourceGroupLocation string = location
 
 param searchServiceSkuName string = 'standard'
 param searchIndexName string = 'gptkbindex'
 
-param storageAccountName string = ''
-param storageResourceGroupName string = ''
+param storageAccountName string = 'sasearchopenaidevwestus'
+param storageResourceGroupName string = 'RG-OPENAI-DEV-WESTUS'
 param storageResourceGroupLocation string = location
 param storageContainerName string = 'content'
 
-param openAiServiceName string = ''
-param openAiResourceGroupName string = ''
+param openAiServiceName string = 'OPAI-POC-DEV-WESTUS'
+param openAiResourceGroupName string = 'RG-OPENAI-DEV-WESTUS'
 param openAiResourceGroupLocation string = location
 
 param openAiSkuName string = 'S0'
 
-param formRecognizerServiceName string = ''
-param formRecognizerResourceGroupName string = ''
+param formRecognizerServiceName string = 'FRM-POC-DEV-WESTUS'
+param formRecognizerResourceGroupName string = 'RG-OPENAI-DEV-WESTUS'
 param formRecognizerResourceGroupLocation string = location
 
 param formRecognizerSkuName string = 'S0'
